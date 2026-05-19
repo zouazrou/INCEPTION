@@ -7,7 +7,7 @@ Set up a complete infrastructure using Docker Compose, creating and managing mul
 * While **Docker** is **modern containerization technology** to create isolated environment for one or few applications but without needing entire OS (kernel, utilities, etc) with only application's requirements(libraries, binaries, and configuration files). Unlike VMs, containers share the same Host kernel. These advantages making them much more lightweight, faster to start, and efficient than VMs.
 ### Secrets vs Environment Variables
 * **Secrets**: A secure way to manage sensitive data (e.g., API key, passwords, service credentials...) without hardcoding them. It is encrypted and stored securely.
-* **Environment variables**: A method to store configuration in key-value pairs. There are less secure for secure data because they are unencrypted and easier to expose.
+* **Environment variables**: A method to store configuration in key-value pairs. There are less secure for sensitive data because they are unencrypted and easier to expose.
 ### Docker Network vs Host Network
 * **Docker Network (Bridge):** The default behavior. It creates an isolated virtual network for your containers. Containers can communicate with each other using service names (via Docker's built-in DNS), keeping your host system's ports isolated.
 * **Host Network:** The container shares the host's networking namespace directly. The container does not get its own IP address, essentially giving it full access to the host's network interfaces.
